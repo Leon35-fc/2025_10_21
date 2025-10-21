@@ -28,6 +28,12 @@ header {
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
 }
+/*aggiunta*/
+header{
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
 
 @media screen and (min-width: 800px) {
   header {
@@ -112,6 +118,12 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  box-shadow: 2px 2px 4px 1px #5c5c5c;
+}
+
+section h2{
+  position:absolute;
+  top: -20px;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -175,7 +187,7 @@ h1 + p {
   
   /*aggiunta*/
   h1 img {
-    transform: scale(75%) translate(-10%, -30px);
+    transform: scale(85%) translate(-10%, -15px);
   }
   
   p,
@@ -194,10 +206,9 @@ h1 + p {
   h1 {
     font-size: 3.6rem;
   }
-}
-
-h1 img{
-  transform: scale(100%);
+  h1 img{
+    transform: scale(100%);
+  } 
 }
 
 @media screen and (min-width: 1200px) {
