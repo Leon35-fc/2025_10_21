@@ -365,13 +365,13 @@ aside div p:first-of-type i{
     width: 33.333%;
     margin-inline: -2px;
   }
+
 }
 aside div p:last-child {
   margin-bottom: 0;
   font-size: 0.8em;
   text-align: right;
 }
-
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
@@ -382,6 +382,50 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
+/*aggiunto*/
+footer > div div{
+  text-align: center;
+  margin: 0.3em;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid white;
+  border-radius: 10px;
+  scale: 90%;
+}
+/*aggiunto*/
+footer div i{ 
+  font-size: 2rem;
+  color: blue;
+}
+/*aggiunto*/
+footer #icon-bottom i{ 
+  color: violet;
+}
+/*aggiunto*/
+#icon-top{
+  position: fixed;
+  bottom: 80px;
+  right: -30px;
+}
+#icon-bottom{
+  position: fixed;
+  bottom: 0px;
+  right: -30px;
+}
+
+/*aggiunto*/
+@media screen and (min-width: 700px){
+  #icon-top{
+    top: 0px;
+    z-index: 2;
+  }
+  #icon-top, #icon-bottom{
+    scale: 100%;
+  }
+}
+
 
 @media screen and (min-width: 800px) {
   footer {
